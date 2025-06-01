@@ -1,6 +1,6 @@
 # Skip-gram with negative sampling
 
-Проект выполнялся в рамках тренировок Яндекса ML2.0 по NLP и был доработан в последствии.
+Проект выполнялся в рамках тренировок Яндекса ML2.0 по NLP и был доработан впоследствии.
 
 ### Описание
 
@@ -9,7 +9,7 @@
 ### Структура
 
  * [Папка `data`](https://github.com/SupNek/Skip-gram_with_neg_sampling/tree/main/data) — содержит данные, на которых обучалась и тестировалась модель. Все данные содержатся в файле `quora.txt`;
- * [Папка `models`](https://github.com/SupNek/Skip-gram_with_neg_sampling/tree/main/models) — содержит сохраненные версии обученных моделей Skip-gram with negative sampling в виде файлов `.pth`
+ * [Папка `models`](https://github.com/SupNek/Skip-gram_with_neg_sampling/tree/main/models) — содержит сохраненные версии обученных моделей Skip-gram with negative sampling в виде файлов `.pth`;
  * [Папка `skip-gram`](https://github.com/SupNek/Skip-gram_with_neg_sampling/tree/main/skip-gram) — содержит все функции необходимые для создания, обучения и созранения модели. Структура:
     * [`data_preprocessing.py`](https://github.com/SupNek/Skip-gram_with_neg_sampling/blob/main/skip-gram/data_preprocessing.py) — отвечает за предобработку данных: составление словаря допустимых слов, выделение контекстных пар, реализации функций для positive sampling и negative sampling;
     * [`data_setup.py`](https://github.com/SupNek/Skip-gram_with_neg_sampling/blob/main/skip-gram/data_setup.py) — отвечает за преобразование предобработанных данных в `torch.utils.data.Dataset` — `Word2VecDataset`, после чего используется `DataLoader` для эффективного генерирования батчей для обучения модели;
